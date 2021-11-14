@@ -7,17 +7,13 @@
  */
 #define buzzer 11 // buzzer 
 #define pot A0 // potantiometer
-int fast = 50 ; //speed
+int fast = 50 ; //flash speed
 int ledler[] = {2,3,4,5,6,7,8,9,10}; //led pins
 
 void setup() {
   pinMode(buzzer, OUTPUT);
   Serial.begin(9600);
-  
-  
-
   for(int i=0; i<9; i++){
-    
   pinMode(ledler[i], OUTPUT);
   
   }
