@@ -1,4 +1,5 @@
 /*materials
+ * 1 arduino uno
  * 9 led
  * 1 potantiometer
  * 1 buzzer
@@ -15,9 +16,7 @@ void setup() {
   Serial.begin(9600);
   for(int i=0; i<9; i++){
   pinMode(ledler[i], OUTPUT);
-  
   }
-
 }
 
 void loop() {
